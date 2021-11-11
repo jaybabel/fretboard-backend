@@ -18,3 +18,5 @@ INSERT INTO scales (id, scalename, imageurl) VALUES (17, 'F# Minor', './public/F
 INSERT INTO scales (id, scalename, imageurl) VALUES (18, 'G Major', './public/G_Major_scale.png');
 INSERT INTO scales (id, scalename, imageurl) VALUES (19, 'G MInor', './public/G_Minor_scale.png');
 INSERT INTO scales (id, scalename, imageurl) VALUES (20, 'G# Major', './public/G#_Major_scale.png');
+INSERT INTO scales (id, scalename, imageurl) VALUES (21, 'F# Major', './public/F#_Major_scale.png');
+INSERT INTO scales (id, scalename, imageurl) VALUES (22, 'Ab Minor', './public/Ab_Minor_scale.png');
