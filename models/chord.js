@@ -10,12 +10,13 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-        Chord.hasMany(models.MusicalID, { foreignKey: 'keyId' });
+        Chord.belongsToMany(models.MusicalKey, { through: 'Key_Chords' });
     }
   };
   Chord.init({
     chordname: DataTypes.STRING,
-    imageurl: DataTypes.STRING
+    imageurl: DataTypes.STRING,
+    isbarrchord: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Chord',
