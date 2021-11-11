@@ -3,23 +3,23 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Chord extends Model {
+  class Scales extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-        Chord.belongsToMany(models.MusicalKey, { through: 'Key_Chords' });
+      // define association here
+      Scales.hasMany(models.MusicalKey, { through: 'Key_Scales' });
     }
   };
-  Chord.init({
-    chordname: DataTypes.STRING,
-    imageurl: DataTypes.STRING,
-    isbarrchord: DataTypes.BOOLEAN
+  Scales.init({
+    scalename: DataTypes.STRING,
+    imageurl: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'Chord',
+    modelName: 'Scales',
   });
-  return Chord;
+  return Scales;
 };
