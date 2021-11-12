@@ -3,15 +3,14 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert(
-      'Scales',
-      [
+      'Key_Scales', [
         {
           keyid: 1,
           scaleid: 2
         },
         {
           keyid: 1,
-          scaleid: 6 
+          scaleid: 6
         },
         {
           keyid: 2,
@@ -121,13 +120,12 @@ module.exports = {
           keyid: 12,
           scaleid: 15
         },
-         {
+        {
           keyid: 12,
           scaleid: 10
         }
       ],
-      {}
-    );
+    {});
   },
 
   down: async (queryInterface, Sequelize) => {
