@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Scales extends Model {
+  class Key_Scales extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,15 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Scales.hasMany(models.MusicalKey, { through: models.Key_Scales });
     }
   };
-  Scales.init({
-    scalename: DataTypes.STRING,
-    imageurl: DataTypes.STRING
+  Key_Scales.init({
+    keyid: DataTypes.INTEGER,
+    scaleid: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'Scales',
+    modelName: 'Key_Scales',
   });
-  return Scales;
+  return Key_Scales;
 };
