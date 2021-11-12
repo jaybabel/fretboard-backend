@@ -1,25 +1,25 @@
-SELECT chords.chordname 
-FROM chords 
-INNER JOIN key_chord
-	ON key_chord.chord_id = chords.id
-INNER JOIN musicalkey
-	ON key_chord.musicalkey_id = musicalkey.id
-WHERE musicalkey.keyname = 'C';
+SELECT "Chords".chordname
+FROM "Chords" 
+INNER JOIN "Key_Chords"
+	ON "Key_Chords".chordid = "Chords".id
+INNER JOIN "MusicalKeys"
+	ON "Key_Chords".keyid = "MusicalKeys".id
+WHERE "MusicalKeys".keyname = 'C';
 
 
-SELECT CONCAT (chords.chordname,'+') 
-FROM chords 
-INNER JOIN key_chord
-	ON key_chord.chord_id = chords.id
-INNER JOIN musicalkey
-	ON key_chord.musicalkey_id = musicalkey.id
-WHERE musicalkey.keyname = 'E';
+SELECT CONCAT ("Chords".chordname,'+') 
+FROM "Chords" 
+INNER JOIN "Key_Chords"
+	ON "Key_Chords".chordid = "Chords".id
+INNER JOIN "MusicalKeys"
+	ON "Key_Chords".keyid = "MusicalKeys".id
+WHERE "MusicalKeys".keyname = 'E';
 
 
-SELECT scales.scalename 
-FROM scales 
-INNER JOIN key_scale
-	ON key_scale.scale_id = scales.id
-INNER JOIN musicalkey
-	ON key_scale.musicalkey_id = musicalkey.id
-WHERE musicalkey.keyname = 'A';
+SELECT "Scales".scalename 
+FROM "Scales" 
+INNER JOIN "Key_Scales"
+	ON "Key_Scales".scaleid = "Scales".id
+INNER JOIN "MusicalKeys"
+	ON "Key_Scales".keyid = "MusicalKeys".id
+WHERE "MusicalKeys".keyname = 'A';
