@@ -5,292 +5,292 @@ module.exports = {
     await queryInterface.bulkInsert(
       'Key_Chords', [
         {
-          keyid: 1,
-          chordid: 1
+          keyId: 1,
+          chordId: 1
         },
         {
-          keyid: 1,
-          chordid: 2
+          keyId: 1,
+          chordId: 2
         },
         {
-          keyid: 1,
-          chordid: 12
+          keyId: 1,
+          chordId: 12
         },
         {
-          keyid: 1,
-          chordid: 13
+          keyId: 1,
+          chordId: 13
         },
         {
-          keyid: 1,
-          chordid: 14
+          keyId: 1,
+          chordId: 14
         },
         {
-          keyid: 1,
-          chordid: 24
+          keyId: 1,
+          chordId: 24
         },
         {
-          keyid: 2,
-          chordid: 1
+          keyId: 2,
+          chordId: 1
         },
         {
-          keyid: 2,
-          chordid: 2
+          keyId: 2,
+          chordId: 2
         },
         {
-          keyid: 2,
-          chordid: 3
+          keyId: 2,
+          chordId: 3
         },
         {
-          keyid: 2,
-          chordid: 13
+          keyId: 2,
+          chordId: 13
         },
         {
-          keyid: 2,
-          chordid: 14
+          keyId: 2,
+          chordId: 14
         },
         {
-          keyid: 2,
-          chordid: 15
+          keyId: 2,
+          chordId: 15
         },
         {
-          keyid: 3,
-          chordid: 2
+          keyId: 3,
+          chordId: 2
         },
         {
-          keyid: 3,
-          chordid: 3
+          keyId: 3,
+          chordId: 3
         },
         {
-          keyid: 3,
-          chordid: 4
+          keyId: 3,
+          chordId: 4
         },
         {
-          keyid: 3,
-          chordid: 14
+          keyId: 3,
+          chordId: 14
         },
         {
-          keyid: 3,
-          chordid: 15
+          keyId: 3,
+          chordId: 15
         },
         {
-          keyid: 3,
-          chordid: 16
+          keyId: 3,
+          chordId: 16
         },
         {
-          keyid: 4,
-          chordid: 3
+          keyId: 4,
+          chordId: 3
         },
         {
-          keyid: 4,
-          chordid: 4
+          keyId: 4,
+          chordId: 4
         },
         {
-          keyid: 4,
-          chordid: 5
+          keyId: 4,
+          chordId: 5
         },
         {
-          keyid: 4,
-          chordid: 15
+          keyId: 4,
+          chordId: 15
         },
         {
-          keyid: 4,
-          chordid: 16
+          keyId: 4,
+          chordId: 16
         },
         {
-          keyid: 4,
-          chordid: 17
+          keyId: 4,
+          chordId: 17
         },
         {
-          keyid: 5,
-          chordid: 4
+          keyId: 5,
+          chordId: 4
         },
         {
-          keyid: 5,
-          chordid: 5
+          keyId: 5,
+          chordId: 5
         },
         {
-          keyid: 5,
-          chordid: 6
+          keyId: 5,
+          chordId: 6
         },
         {
-          keyid: 5,
-          chordid: 16
+          keyId: 5,
+          chordId: 16
         },
         {
-          keyid: 5,
-          chordid: 17
+          keyId: 5,
+          chordId: 17
         },
         {
-          keyid: 5,
-          chordid: 18
+          keyId: 5,
+          chordId: 18
         },
         {
-          keyid: 6,
-          chordid: 5
+          keyId: 6,
+          chordId: 5
         },
         {
-          keyid: 6,
-          chordid: 6
+          keyId: 6,
+          chordId: 6
         },
         {
-          keyid: 6,
-          chordid: 7
+          keyId: 6,
+          chordId: 7
         },
         {
-          keyid: 6,
-          chordid: 17
+          keyId: 6,
+          chordId: 17
         },
         {
-          keyid: 6,
-          chordid: 18
+          keyId: 6,
+          chordId: 18
         },
         {
-          keyid: 6,
-          chordid: 19
+          keyId: 6,
+          chordId: 19
         },
         {
-          keyid: 7,
-          chordid: 6
+          keyId: 7,
+          chordId: 6
         },
         {
-          keyid: 7,
-          chordid: 7
+          keyId: 7,
+          chordId: 7
         },
         {
-          keyid: 7,
-          chordid: 8
+          keyId: 7,
+          chordId: 8
         },
         {
-          keyid: 7,
-          chordid: 18
+          keyId: 7,
+          chordId: 18
         },
         {
-          keyid: 7,
-          chordid: 19
+          keyId: 7,
+          chordId: 19
         },
         {
-          keyid: 7,
-          chordid: 20
+          keyId: 7,
+          chordId: 20
         },
         {
-          keyid: 8,
-          chordid: 7
+          keyId: 8,
+          chordId: 7
         },
         {
-          keyid: 8,
-          chordid: 8
+          keyId: 8,
+          chordId: 8
         },
         {
-          keyid: 8,
-          chordid: 9
+          keyId: 8,
+          chordId: 9
         },
         {
-          keyid: 8,
-          chordid: 19
+          keyId: 8,
+          chordId: 19
         },
         {
-          keyid: 8,
-          chordid: 20
+          keyId: 8,
+          chordId: 20
         },
         {
-          keyid: 8,
-          chordid: 21
+          keyId: 8,
+          chordId: 21
         },
         {
-          keyid: 9,
-          chordid: 8
+          keyId: 9,
+          chordId: 8
         },
         {
-          keyid: 9,
-          chordid: 9
+          keyId: 9,
+          chordId: 9
         },
         {
-          keyid: 9,
-          chordid: 10
+          keyId: 9,
+          chordId: 10
         },
         {
-          keyid: 9,
-          chordid: 20
+          keyId: 9,
+          chordId: 20
         },
         {
-          keyid: 9,
-          chordid: 21
+          keyId: 9,
+          chordId: 21
         },
         {
-          keyid: 9,
-          chordid: 22
+          keyId: 9,
+          chordId: 22
         },
         {
-          keyid: 10,
-          chordid: 9
+          keyId: 10,
+          chordId: 9
         },
         {
-          keyid: 10,
-          chordid: 10
+          keyId: 10,
+          chordId: 10
         },
         {
-          keyid: 10,
-          chordid: 11
+          keyId: 10,
+          chordId: 11
         },
         {
-          keyid: 10,
-          chordid: 21
+          keyId: 10,
+          chordId: 21
         },
         {
-          keyid: 10,
-          chordid: 22
+          keyId: 10,
+          chordId: 22
         },
         {
-          keyid: 10,
-          chordid: 23
+          keyId: 10,
+          chordId: 23
         },
         {
-          keyid: 11,
-          chordid: 10
+          keyId: 11,
+          chordId: 10
         },
         {
-          keyid: 11,
-          chordid: 11
+          keyId: 11,
+          chordId: 11
         },
         {
-          keyid: 11,
-          chordid: 12
+          keyId: 11,
+          chordId: 12
         },
         {
-          keyid: 11,
-          chordid: 22
+          keyId: 11,
+          chordId: 22
         },
         {
-          keyid: 11,
-          chordid: 23
+          keyId: 11,
+          chordId: 23
         },
         {
-          keyid: 11,
-          chordid: 24
+          keyId: 11,
+          chordId: 24
         },
         {
-          keyid: 12,
-          chordid: 11
+          keyId: 12,
+          chordId: 11
         },
         {
-          keyid: 12,
-          chordid: 12
+          keyId: 12,
+          chordId: 12
         },
         {
-          keyid: 12,
-          chordid: 1
+          keyId: 12,
+          chordId: 1
         },
         {
-          keyid: 12,
-          chordid: 23
+          keyId: 12,
+          chordId: 23
         },
         {
-          keyid: 12,
-          chordid: 24
+          keyId: 12,
+          chordId: 24
         },
         {
-        keyid: 12,
-        chordid: 13
+        keyId: 12,
+        chordId: 13
       }
     ],
      {});

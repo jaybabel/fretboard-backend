@@ -8,10 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      keyid: {
+      keyId: {
         type: Sequelize.INTEGER
       },
-      chordid: {
+      chordId: {
         type: Sequelize.INTEGER
       },
       createdAt: {

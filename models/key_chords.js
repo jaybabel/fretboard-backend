@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Key_Chords.init({
-    keyid: DataTypes.INTEGER,
-    chordid: DataTypes.INTEGER
+    keyId: DataTypes.INTEGER,
+    chordId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Key_Chords',

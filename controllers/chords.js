@@ -1,8 +1,20 @@
 const Chords = require('../models').Chords;
+const MusicalKeys = require('../models').MusicalKeys;
 
 const getChords = (req, res) => {
-    // res.send('chords request received in controller')
-    Chords.findAll({attributes:['chordname', 'imageurl', 'isbarchord']})
+
+    Chords.findAll({
+        attributes:['chordname', 'imageurl', 'isbarchord'],       
+         include: {
+             model: MusicalKeys,
+             required: true,
+            // as: 'MusicalKeyId',
+            where: {
+                keyname: 'E'
+            }
+        }
+    })
+
     .then(chords => {
         res.json(chords)
     })
@@ -10,14 +22,6 @@ const getChords = (req, res) => {
         res.send(`ERROR: ${err}`);
     })
 }
-
-// SELECT "Chords".chordname
-// FROM "Chords" 
-// INNER JOIN "Key_Chords"
-// 	ON "Key_Chords".chordid = "Chords".id
-// INNER JOIN "MusicalKeys"
-// 	ON "Key_Chords".keyid = "MusicalKeys".id
-// WHERE "MusicalKeys".keyname = 'C';
 
 module.exports = {
     getChords
