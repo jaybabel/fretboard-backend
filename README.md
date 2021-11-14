@@ -14,8 +14,7 @@ http://localhost:3005/musicalkeys
 
 localhost:3005/chords/:*key*/:*barchord*
 
-The value, *key* is selected from the front-end dropdown list
-The boolean value *barchord* is selected by the front-end radio buttons
+The value, *key* is selected from the front-end dropdown list.  The boolean value *barchord* is selected by the front-end radio buttons.
 
 http://localhost:3005/chords/B/true
 
