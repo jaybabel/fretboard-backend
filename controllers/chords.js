@@ -8,9 +8,8 @@ const getChords = (req, res) => {
          include: {
              model: MusicalKeys,
              required: true,
-            // as: 'MusicalKeyId',
             where: {
-                keyname: 'E'
+                keyname: (req.params.key)
             }
         }
     })
