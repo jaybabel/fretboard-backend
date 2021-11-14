@@ -18,3 +18,13 @@ The value, *key*, is selected from the front-end dropdown list.  The boolean val
 
 http://localhost:3005/chords/B/true
 
+### To get scales for a key:
+
+localhost:3005/scales/*key*
+
+The value, *key*, is selected from the front-end dropdown list.
+
+http://localhost:3005/scales/G
+
+
+
