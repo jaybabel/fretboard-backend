@@ -5,6 +5,6 @@ const ctrl = require('../controllers');
 // router.get('/', function (req, res) {
 //     res.send('musical key request received in router')
 // })
-router.get('/:key', ctrl.chords.getChords);
+router.get('/:key/:barchord', ctrl.chords.getChords);
 
 module.exports = router;

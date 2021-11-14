@@ -4,7 +4,10 @@ const MusicalKeys = require('../models').MusicalKeys;
 const getChords = (req, res) => {
 
     Chords.findAll({
-        attributes:['chordname', 'imageurl', 'isbarchord'],       
+        attributes:['chordname', 'imageurl', 'isbarchord'],
+        where: {
+            isbarchord: (req.params.barchord)
+        },      
          include: {
              model: MusicalKeys,
              required: true,
