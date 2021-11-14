@@ -11,6 +11,9 @@ const getChords = (req, res) => {
          include: {
              model: MusicalKeys,
              required: true,
+             attributes:['id', 'keyname'],
+            // model: Key_Chords,
+            // attributes:['ChordId', 'MusicalKeyId'],
             where: {
                 keyname: (req.params.key)
             }
