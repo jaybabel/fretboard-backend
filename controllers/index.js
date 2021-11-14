@@ -1,4 +1,5 @@
 module.exports = {
     musicalkeys: require('./musicalkeys'),
-    chords: require('./chords')
+    chords: require('./chords'),
+    scales: require('./scales')
 }

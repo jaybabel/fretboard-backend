@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       // Scales.hasMany(models.MusicalKey, { through: models.Key_Scales });
+      Scales.belongsToMany(models.MusicalKeys, { through: models.Key_Scales  });
     }
   };
   Scales.init({
