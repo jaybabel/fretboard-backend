@@ -26,6 +26,9 @@ The value, *key*, is selected from the front-end dropdown list.
 
 http://localhost:3005/scales/G
 
+### AWS S3 for images
+
+https://fretboard-images.s3.us-east-2.amazonaws.com/
 
 ## CORS cross-scripting issue
 
