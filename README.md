@@ -27,4 +27,23 @@ The value, *key*, is selected from the front-end dropdown list.
 http://localhost:3005/scales/G
 
 
+## CORS cross-scripting issue
+
+A security issue arises with the API on the local host.  To address the issue, on the back-end server (from StackOverflow):
+
+1. Stop the Node.js server.
+2. npm install cors --save
+3. Add following lines to your server.js
+
+```
+    const cors=require("cors");
+    const corsOptions ={
+       origin:'*', 
+       credentials:true,            //access-control-allow-credentials:true
+       optionSuccessStatus:200,
+    }
+
+    app.use(cors(corsOptions)) // Use this after the variable declaration
+```
+
 
