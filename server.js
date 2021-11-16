@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require("express");
 const app = express();
 
@@ -30,6 +32,6 @@ app.use('/scales', routes.scales)
 //     res.send('musical key request in server.js')
 // })
 
-app.listen(3005, () => {
-    console.log("Server is listening!!!")
-});
+app.listen(process.env.PORT, () => {
+    console.log(`I am listening on port ${process.env.PORT}`);
+})
