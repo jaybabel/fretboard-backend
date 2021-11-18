@@ -28,8 +28,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/musicalkeys', routes.musicalkeys)
 app.use('/chords', routes.chords)
 app.use('/scales', routes.scales)
-// app.get('/keys', function (req, res) {
-//     res.send('musical key request in server.js')
+app.use('/user_accounts', routes.user_accounts)
+// app.get('/user_accounts', function (req, res) {
+//     res.send('user_accounts request in server.js')
 // })
 
 app.listen(process.env.PORT, () => {

@@ -14,3 +14,5 @@ SET NOT NULL;
 
 SELECT * FROM "User_Accounts";
 
+ALTER TABLE "User_Recordings"
+ADD COLUMN "userId" INTEGER;
