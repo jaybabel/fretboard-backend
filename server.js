@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/musicalkeys', routes.musicalkeys)
 app.use('/chords', routes.chords)
 app.use('/scales', routes.scales)
-app.use('/user_accounts', routes.user_accounts)
+app.use('/user', routes.user_accounts)
 // app.get('/user_accounts', function (req, res) {
 //     res.send('user_accounts request in server.js')
 // })

@@ -16,3 +16,6 @@ SELECT * FROM "User_Accounts";
 
 ALTER TABLE "User_Recordings"
 ADD COLUMN "userId" INTEGER;
+
+ALTER TABLE "User_Recordings"
+ADD COLUMN "memo" TEXT;

@@ -9,7 +9,7 @@ const ctrl = require('../controllers');
 
 //router.get('/signup', ctrl.user_accounts.renderNew);
 //router.get('/login', ctrl.user_accounts.renderLogin);
-router.get('/:id', ctrl.user_accounts.login)
+router.post('/login', ctrl.user_accounts.login)
 //router.post('/signup', ctrl.user_account.addNew)
 
 module.exports = router;

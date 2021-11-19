@@ -16,7 +16,9 @@ module.exports = (sequelize, DataTypes) => {
   };
   User_Recordings.init({
     recordingname: DataTypes.STRING,
-    recordingurl: DataTypes.STRING
+    recordingurl: DataTypes.STRING,
+    userId: DataTypes.INTEGER,
+    memo: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'User_Recordings',
