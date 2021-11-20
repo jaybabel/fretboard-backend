@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require("express");
 const app = express();
+const bodyParser = require('body-parser');
 
 const methodOverride = require('method-override')
 const routes = require('./routes');
@@ -22,6 +23,7 @@ app.use(cors(corsOptions)) // Use this after the variable declaration
 app.use(express.static("public"));
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.json());
 //app.use(express.urlencoded());
 
 
@@ -29,7 +31,8 @@ app.use('/musicalkeys', routes.musicalkeys)
 app.use('/chords', routes.chords)
 app.use('/scales', routes.scales)
 app.use('/user', routes.user_accounts)
-// app.get('/user_accounts', function (req, res) {
+app.use('/signup', routes.user_accounts)
+// app.use('/signup', function (req, res) {
 //     res.send('user_accounts request in server.js')
 // })
 

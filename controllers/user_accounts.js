@@ -1,27 +1,19 @@
 const User = require('../models').User_Account;
 
-//  app.get('/user_accounts', function (req, res) {
-//      res.send('User_Accounts request received in controller')
-//  })
-
-// const login = (req, res) => {
-//     // res.send(req.params.id)
-//     User_Account.findAll({
-//         where: {
-//             username: req.params.id
-//         }
-//     })
-//     .then(foundUser => {
-//             res.json(foundUser);            
-//         })
-//     .catch(err => {
-//         res.send(`ERROR: ${err}`);
-//         }) 
-// }
+const signup = (req, res) => {
+    User.create(req.body)
+        .then((newUser) => {
+            [ newUser.name,
+              newUser.username,
+              newUser.password,
+              newUser.is_admin
+            ]
+        })
+}
 
 const login = (req, res) => {
-    console.log('=========== ', req.body)
     User.findOne({
+        attributes:['username', 'password'],
         where: {
             username: req.body.username
         }
@@ -29,10 +21,12 @@ const login = (req, res) => {
     .then(foundUser => {
         if(req.body.password === foundUser.password) {
             console.log('Successful logon')
+            res.json({username: foundUser.username})
                 } else {
                     console.log(`ERROR: Incorrect Username/Password`);
     }})
 }
 module.exports = {
+    signup,
     login
 }
