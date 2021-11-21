@@ -11,6 +11,19 @@ const signup = (req, res) => {
         })
 }
 
+const deleteUser = (req, res) => {
+    User.findByPk(req.params.id)
+        if (username === null) {
+            console.log('User record not found')
+        } else {
+            console.log(username instanceof User)
+        }
+    // User.destroy({ where: { username: req.body.username } })
+    // .then(() => {
+    //     res.redirect('/');
+    // })
+  }
+
 const login = (req, res) => {
     User.findOne({
         attributes:['username', 'password'],
@@ -28,5 +41,6 @@ const login = (req, res) => {
 }
 module.exports = {
     signup,
+    deleteUser,
     login
 }

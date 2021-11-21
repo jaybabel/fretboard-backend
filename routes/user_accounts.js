@@ -8,8 +8,8 @@ const ctrl = require('../controllers');
 // })
 
 router.post('/signup', ctrl.user_accounts.signup);
-//router.get('/login', ctrl.user_accounts.renderLogin);
-router.post('/login', ctrl.user_accounts.login)
-//router.post('/signup', ctrl.user_account.addNew)
+router.delete('/:id', ctrl.user_accounts.deleteUser);
+router.post('/login', ctrl.user_accounts.login);
+
 
 module.exports = router;
