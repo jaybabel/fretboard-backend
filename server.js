@@ -32,6 +32,8 @@ app.use('/chords', routes.chords)
 app.use('/scales', routes.scales)
 app.use('/user', routes.user_accounts)
 app.use('/signup', routes.user_accounts)
+app.use('/user_recordings', routes.user_recordings)
+
 // app.use('/signup', function (req, res) {
 //     res.send('user_accounts request in server.js')
 // })

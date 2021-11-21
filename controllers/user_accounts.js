@@ -11,17 +11,22 @@ const signup = (req, res) => {
         })
 }
 
+const changePassword = (req, res) => {
+
+}
+
 const deleteUser = (req, res) => {
-    User.findByPk(req.params.id)
-        if (username === null) {
-            console.log('User record not found')
-        } else {
-            console.log(username instanceof User)
-        }
-    // User.destroy({ where: { username: req.body.username } })
-    // .then(() => {
-    //     res.redirect('/');
-    // })
+    console.log(req.body)
+    // User.findByPk(req.params.id)
+    //     if (username === null) {
+    //         console.log('User record not found')
+    //     } else {
+    //         console.log(username instanceof User)
+    //     }
+    User.destroy({ where: { id: req.body.index } })
+    .then(() => {
+        res.redirect('/');
+    })
   }
 
 const login = (req, res) => {
@@ -37,10 +42,12 @@ const login = (req, res) => {
             res.json({username: foundUser.username})
                 } else {
                     console.log(`ERROR: Incorrect Username/Password`);
-    }})
+                }
+    })
 }
 module.exports = {
     signup,
+    changePassword,
     deleteUser,
     login
 }
