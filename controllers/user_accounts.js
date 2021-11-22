@@ -12,17 +12,20 @@ const signup = (req, res) => {
 }
 
 const changePassword = (req, res) => {
-
+    console.log(req.params)
+    User.update(
+        // attributes:['username', 'password'],
+        { password: req.params.password },
+        { where: {username: req.params.id}
+    })
+    .then(foundUser => {
+        console.log('Controller - change password')
+            res.json({username: foundUser.username})
+        })           
+   // console.log(`ERROR: Incorrect Username/Password`);
 }
 
 const deleteUser = (req, res) => {
-    console.log(req.body)
-    // User.findByPk(req.params.id)
-    //     if (username === null) {
-    //         console.log('User record not found')
-    //     } else {
-    //         console.log(username instanceof User)
-    //     }
     User.destroy({ where: { username: req.params.id } })
     .then(() => {
         res.redirect('/');
