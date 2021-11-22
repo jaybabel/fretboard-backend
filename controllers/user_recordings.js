@@ -15,7 +15,19 @@ const getRecordings = (req, res) => {
     })
 }
 
+const getRecordingData = (req, res) => {
+    console.log("getRecordingData request, ", props)
+    User_Recordings.findOne()
+    .then(recordingdata => {
+        res.json(recordingdata)
+    })
+    .catch(err => {
+        res.send(`ERROR: ${err}`);
+    })    
+}
+
 
 module.exports = {
-    getRecordings
+    getRecordings,
+    getRecordingData
 }

@@ -23,7 +23,7 @@ const deleteUser = (req, res) => {
     //     } else {
     //         console.log(username instanceof User)
     //     }
-    User.destroy({ where: { id: req.body.index } })
+    User.destroy({ where: { username: req.params.id } })
     .then(() => {
         res.redirect('/');
     })

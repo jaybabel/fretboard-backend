@@ -6,5 +6,6 @@ const ctrl = require('../controllers');
 //     res.send('musical key request received in router')
 // })
 router.get('/', ctrl.user_recordings.getRecordings);
+router.get('/:index', ctrl.user_recordings.getRecordingData);
 
 module.exports = router;

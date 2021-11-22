@@ -8,7 +8,7 @@ const ctrl = require('../controllers');
 // })
 
 router.post('/signup', ctrl.user_accounts.signup);
-router.delete('/:id', ctrl.user_accounts.deleteUser);
+router.post('/delete/:id', ctrl.user_accounts.deleteUser);
 router.post('/login', ctrl.user_accounts.login);
 
 
