@@ -26,6 +26,23 @@ The value, *key*, is selected from the front-end dropdown list.
 
 http://localhost:3005/scales/G
 
+### User account APIs
+
+post(`${BASE_URL}/user/signup`, data)
+
+post(`${BASE_URL}/user/changePassword/${e.target[0].value}/${e.target[2].value}`)
+
+post(`${BASE_URL}/user/delete/${e.target[0].value}`)
+
+.post(`${BASE_URL}/user/login`, data)
+
+### User recording APIs
+
+.get(`${BASE_URL}/user_recordings`)
+
+axios.post(`${BASE_URL}/user_recordings/getRecordingData`, {recordingname:data} )
+
+
 ### AWS S3 for images
 
 https://fretboard-images.s3.us-east-2.amazonaws.com/
