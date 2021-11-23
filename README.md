@@ -1,6 +1,8 @@
 # fretboard-backend
 Postgres SQL, JS, MVC
 
+Backend hosted on Heroku.
+
 ## Backend API calls
 ### To get keys:
 
