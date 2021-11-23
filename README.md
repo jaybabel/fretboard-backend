@@ -3,6 +3,8 @@ Postgres SQL, JS, MVC
 
 Backend hosted on Heroku.
 
+Frontend README https://github.com/jaybabel/fretboard-frontend/blob/main/README.md
+
 ## Backend API calls
 ### To get keys:
 
