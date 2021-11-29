@@ -16,7 +16,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   MusicalKeys.init({
-    keyname: DataTypes.STRING
+    keyname: DataTypes.STRING,
+    imageurl: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'MusicalKeys',
