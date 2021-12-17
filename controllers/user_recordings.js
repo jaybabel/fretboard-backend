@@ -12,7 +12,7 @@ const getRecordings = (req, res) => {
         // add join
         { include: [{ 
             model: User,
-            where: {username: {[Op.eq]: 'Jay'}
+            where: {username: {[Op.eq]: req.params.user}
             }
           }]
         }
