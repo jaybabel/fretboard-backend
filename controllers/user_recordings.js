@@ -2,9 +2,16 @@ const User_Recordings = require('../models').User_Recordings;
 const User = require('../models').User_Account;
 const { Op } = require("sequelize");
 
-// app.get('/keys', function (req, res) {
-//     res.send('musical key request')
-// })
+const addRecording = (req, res) => {
+    User_Recordings.create(req.body)
+        .then((newRecording) => {
+            [ newRecording.userId,
+              newRecording.recordingname, 
+              newRecording.recordingurl,
+              newRecording.memo
+            ]
+        })
+}
 
 const getRecordings = (req, res) => {
     // res.send('recordings request received in controller')
@@ -40,8 +47,8 @@ const getRecordingData = (req, res) => {
     })    
 }
 
-
 module.exports = {
+    addRecording,
     getRecordings,
     getRecordingData
 }
