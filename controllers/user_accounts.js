@@ -30,7 +30,7 @@ const deleteUser = (req, res) => {
     .then(() => {
         res.redirect('/');
     })
-  }
+}
 
 const login = (req, res) => {
     User.findOne({
@@ -48,9 +48,23 @@ const login = (req, res) => {
                 }
     })
 }
+
+const getUserId = (req, res) => {
+    User.findOne({ 
+        attributes:['id'],
+        where: { 
+            username: req.body.username
+        }
+    })
+    .then(foundId => {
+        res.json({userId: foundId.id})
+    })
+}
+
 module.exports = {
     signup,
     changePassword,
     deleteUser,
-    login
+    login,
+    getUserId
 }
