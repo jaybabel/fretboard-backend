@@ -57,8 +57,10 @@ const getUserId = (req, res) => {
         }
     })
     .then(foundId => {
-        res.json({userId: foundId.id})
+//        res.json({userId: foundId.id})
+        res.json({foundId})
     })
+    console.log('======= ', res)
 }
 
 module.exports = {
