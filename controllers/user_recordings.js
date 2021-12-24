@@ -35,7 +35,7 @@ const getRecordings = (req, res) => {
 const getRecordingData = (req, res) => {
    // console.log("getRecordingData request, ", req.body)
     User_Recordings.findOne({
-        attributes:['recordingname', 'recordingurl', 'memo'],
+        attributes:['id', 'recordingname', 'recordingurl', 'memo'],
         where: { recordingname: req.body.recordingname }
     })
 
