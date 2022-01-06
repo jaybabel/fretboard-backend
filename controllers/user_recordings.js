@@ -47,8 +47,19 @@ const getRecordingData = (req, res) => {
     })    
 }
 
+const deleteRecording = (req, res) => {
+    User_Recordings.destroy({ where: { id: req.params.id } })
+    .then(() => {
+        res.redirect('/');
+    })
+    .catch(err => {
+        res.send(`ERROR: ${err}`);
+    })  
+}
+
 module.exports = {
     addRecording,
     getRecordings,
-    getRecordingData
+    getRecordingData,
+    deleteRecording
 }

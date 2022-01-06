@@ -8,5 +8,6 @@ const ctrl = require('../controllers');
 router.post('/addRecording', ctrl.user_recordings.addRecording);
 router.get('/:user', ctrl.user_recordings.getRecordings);
 router.post('/getRecordingData', ctrl.user_recordings.getRecordingData);
+router.post('/deleteRecording/:id', ctrl.user_recordings.deleteRecording);
 
 module.exports = router;
